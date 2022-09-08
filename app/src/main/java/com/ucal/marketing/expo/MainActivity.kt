@@ -7,6 +7,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 
 class MainActivity : AppCompatActivity() {
+
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,4 +22,5 @@ class MainActivity : AppCompatActivity() {
             settings.javaScriptEnabled = true
         }
     }
+
 }
