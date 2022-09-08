@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">UCAL Mkt</string>
+    <string name="app_name">UCAL Expo</string>
     <string name="ucal_splash_logo">UCAL Splash Logo</string>
     <string name="made_in_ucal">Made in UCAL</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>
