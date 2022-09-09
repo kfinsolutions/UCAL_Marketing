@@ -3,16 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/ic_baseline_home_24"
-        android:title="Home" />
-    <item
-        android:id="@+id/nav_contact"
-        android:icon="@drawable/ic_baseline_contacts_24"
-        android:title="Contact Form" />
-    <item
-        android:id="@+id/nav_export_csv"
-        android:icon="@drawable/ic_baseline_import_export_24"
-        android:title="Export as CSV" />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_baseline_contacts_24"
+            android:title="@string/contact_form" />
+        <item
+            android:id="@+id/nav_export_csv"
+            android:icon="@drawable/ic_baseline_import_export_24"
+            android:title="@string/export_as_csv" />
+    </group>
 </menu>

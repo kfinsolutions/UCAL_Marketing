@@ -4,4 +4,53 @@
     <string name="made_in_ucal">Made in UCAL</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="contact_form">Contact Form</string>
+    <string name="export_as_csv">Export as CSV</string>
+    <string name="ucal_visitor_entry">UCAL Visitor Entry</string>
+    <string name="visitor_form_name">Name</string>
+    <string name="required">Required</string>
+    <string name="visitor_form_designation">Designation</string>
+    <string name="visitor_form_company">Company name</string>
+    <string name="visitor_form_visitor_type">Visitor Type</string>
+    <string name="visitor_form_phone">Phone Number</string>
+    <string name="visitor_form_email">Email Address</string>
+    <string name="visitor_form_product">Product Interested</string>
+    <string name="visitor_form_rating">How Satisfied are you with UCAL Competency?</string>
+    <string name="visitor_form_rating_extremely_dissatisfied">Extremely Dissatisfied</string>
+    <string name="visitor_form_rating_extremely_satisfied">Extremely Satisfied</string>
+    <string name="visitor_form_save_button">Save</string>
+    <string name="product_carburettors">Carburettors</string>
+    <string name="product_oil_pumps">Oil Pumps</string>
+    <string name="product_vacuum_pumps">Vacuum Pumps</string>
+    <string name="product_fuel_rail">Fuel Rail</string>
+    <string name="product_e_coolant_pump">e-Coolant Pump</string>
+    <string name="product_e_vacuum_pump">e-Vacuum Pump</string>
+    <string name="product_dosing_system">Dosing System</string>
+    <string name="product_electronics">Electronics</string>
+    <string name="product_other">Other</string>
+    <string name="product_specify">Specify</string>
+    <string name="visitor_form_reset_button">Reset</string>
+    <string name="rating_one">1</string>
+    <string name="rating_two">2</string>
+    <string name="rating_three">3</string>
+    <string name="rating_four">4</string>
+    <string name="rating_five">5</string>
+    <string name="rating_six">6</string>
+    <string name="rating_seven">7</string>
+    <string name="rating_eight">8</string>
+    <string name="rating_nine">9</string>
+    <string name="rating_ten">10</string>
+    <string name="export_to_csv">Export to CSV</string>
+
+
+    <string-array name="visitor_type">
+        <item>OEM</item>
+        <item>Tier 1</item>
+        <item>Tier 2</item>
+        <item>Supplier</item>
+        <item>Engineering Services</item>
+        <item>Aftermarket</item>
+    </string-array>
 </resources>

@@ -1,26 +1,24 @@
 package com.ucal.marketing.expo
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.webkit.WebView
-import android.webkit.WebViewClient
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var toggle : ActionBarDrawerToggle
+    private lateinit var drawerLayout: DrawerLayout
 
-    @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
+        drawerLayout = findViewById(R.id.drawerLayout)
         val navView : NavigationView = findViewById(R.id.nav_view)
 
         toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
@@ -29,26 +27,36 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        val fragment = supportFragmentManager.beginTransaction()
+        fragment.replace(R.id.frameLayout, HomeFragment())
+        fragment.commit()
+
         navView.setNavigationItemSelectedListener {
 
+            it.isChecked = true
+
             when(it.itemId) {
-                R.id.nav_home -> Toast.makeText(applicationContext, "Home Clicked", Toast.LENGTH_SHORT).show()
-                R.id.nav_contact -> Toast.makeText(applicationContext, "Contact Clicked", Toast.LENGTH_SHORT).show()
-                R.id.nav_export_csv -> Toast.makeText(applicationContext, "Export to CSV Clicked", Toast.LENGTH_SHORT).show()
+                R.id.nav_home -> replaceFragment(HomeFragment(), it.title.toString())
+                R.id.nav_contact -> replaceFragment(ContactFragment(), it.title.toString())
+                R.id.nav_export_csv -> replaceFragment(ExportFragment(), it.title.toString())
             }
 
             true
 
         }
 
-        val mainWeb = findViewById<WebView>(R.id.mainWebView)
 
-        mainWeb.webViewClient = WebViewClient()
 
-        mainWeb.apply {
-            loadUrl("file:///android_asset/index.html")
-            settings.javaScriptEnabled = true
-        }
+    }
+
+    private fun replaceFragment(fragment: Fragment, title: String){
+
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frameLayout,fragment)
+        fragmentTransaction.commit()
+        drawerLayout.closeDrawers()
+        setTitle(title)
 
     }
 
@@ -58,5 +66,6 @@ class MainActivity : AppCompatActivity() {
         }
         return true
     }
+
 
 }
