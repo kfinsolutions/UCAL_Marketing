@@ -8,6 +8,7 @@
     <string name="home">Home</string>
     <string name="contact_form">Contact Form</string>
     <string name="export_as_csv">Export as CSV</string>
+    <string name="export_to_csv">Export to CSV</string>
     <string name="ucal_visitor_entry">UCAL Visitor Entry</string>
     <string name="visitor_form_name">Name</string>
     <string name="required">Required</string>
@@ -42,8 +43,6 @@
     <string name="rating_eight">8</string>
     <string name="rating_nine">9</string>
     <string name="rating_ten">10</string>
-    <string name="export_to_csv">Export to CSV</string>
-
 
     <string-array name="visitor_type">
         <item>OEM</item>
