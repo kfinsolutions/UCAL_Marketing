@@ -15,6 +15,6 @@
         <item
             android:id="@+id/nav_export_csv"
             android:icon="@drawable/ic_baseline_import_export_24"
-            android:title="@string/export_as_csv" />
+            android:title="@string/export_to_csv" />
     </group>
 </menu>

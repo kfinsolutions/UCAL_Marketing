@@ -4,14 +4,12 @@
     <string name="made_in_ucal">Made in UCAL</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
     <string name="contact_form">Contact Form</string>
-    <string name="export_as_csv">Export as CSV</string>
     <string name="export_to_csv">Export to CSV</string>
     <string name="ucal_visitor_entry">UCAL Visitor Entry</string>
-    <string name="visitor_form_name">Name</string>
     <string name="required">Required</string>
+    <string name="visitor_form_name">Name</string>
     <string name="visitor_form_designation">Designation</string>
     <string name="visitor_form_company">Company name</string>
     <string name="visitor_form_visitor_type">Visitor Type</string>
@@ -43,6 +41,10 @@
     <string name="rating_eight">8</string>
     <string name="rating_nine">9</string>
     <string name="rating_ten">10</string>
+    <string name="support_email">support@ucal.com</string>
+    <string name="entry_status">Entry status</string>
+    <string name="total_no_of_entries">Total number of Entries</string>
+    <string name="entries_count">0</string>
 
     <string-array name="visitor_type">
         <item>OEM</item>

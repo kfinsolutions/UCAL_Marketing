@@ -4,10 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/drawable/ic_splash_background.xml" value="0.3295" />
+        <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/drawable/rounded_button.xml" value="0.3135" />
         <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout-v28/activity_splash.xml" value="0.12" />
         <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout/activity_splash.xml" value="0.1377887788778878" />
-        <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout/fragment_contact.xml" value="0.4542829643888354" />
+        <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout/fragment_contact.xml" value="0.25" />
         <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout/fragment_export.xml" value="0.1573844884488449" />
         <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout/fragment_home.xml" value="0.1573844884488449" />
         <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout/nav_header.xml" value="0.1" />

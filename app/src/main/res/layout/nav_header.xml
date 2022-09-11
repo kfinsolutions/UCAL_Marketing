@@ -18,17 +18,17 @@
         android:layout_height="wrap_content"
         android:id="@+id/company_name"
         android:paddingTop="8dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:textSize="20sp"
-        android:text="UCAL Marketing"
+        android:text="@string/app_name"
         android:textColor="@color/black"
         android:textStyle="bold" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:textSize="16sp"
-        android:text="support@ucal.com" />
+        android:text="@string/support_email" />
     
     <View
         android:layout_width="match_parent"
