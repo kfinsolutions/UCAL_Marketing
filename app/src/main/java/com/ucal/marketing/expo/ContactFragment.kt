@@ -180,7 +180,7 @@ class ContactFragment : Fragment() {
                 null,name,designation,company,visitorType,phone,email,productsString, rating?.toInt(), timeDate()
             )
             GlobalScope.launch(Dispatchers.IO){
-                appDb.studentDao().insert(visitor)
+                appDb.visitorDao().insert(visitor)
             }
             resetData()
             Toast.makeText(context,"Visitor data has been successfully saved",Toast.LENGTH_LONG).show()

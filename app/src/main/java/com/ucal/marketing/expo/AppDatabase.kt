@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase
 @Database(entities = [Visitor :: class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
 
-    abstract fun studentDao() : VisitorDao
+    abstract fun visitorDao() : VisitorDao
 
     companion object{
 

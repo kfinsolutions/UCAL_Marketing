@@ -34,7 +34,8 @@ class ExportFragment : Fragment() {
 
         //Export button
         binding.btnExportToCSV.setOnClickListener {
-            Toast.makeText(context,"CSV Export Successful", Toast.LENGTH_LONG).show()
+            exportToCsv()
+            Toast.makeText(context,getString(R.string.csv_export_successful), Toast.LENGTH_LONG).show()
         }
 
         // Inflate the layout for this fragment
@@ -47,7 +48,7 @@ class ExportFragment : Fragment() {
 
         var visitors: Int
         GlobalScope.launch {
-            visitors = appDb.studentDao().getRowCount()
+            visitors = appDb.visitorDao().getRowCount()
             displayData(visitors)
         }
 
@@ -56,6 +57,16 @@ class ExportFragment : Fragment() {
     private suspend fun displayData(visitors: Int) {
         withContext(Dispatchers.Main){
             binding.statusEntriesId.text = visitors.toString()
+        }
+    }
+
+    @OptIn(DelicateCoroutinesApi::class)
+    private fun exportToCsv() {
+        GlobalScope.launch(Dispatchers.IO){
+            val visitors = appDb.visitorDao().getAll()
+
+            //Create CSV file with data
+
         }
     }
 

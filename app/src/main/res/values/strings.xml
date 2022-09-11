@@ -45,6 +45,7 @@
     <string name="entry_status">Entry status</string>
     <string name="total_no_of_entries">Total number of Entries</string>
     <string name="entries_count">0</string>
+    <string name="csv_export_successful">CSV Export Successful</string>
 
     <string-array name="visitor_type">
         <item>OEM</item>
