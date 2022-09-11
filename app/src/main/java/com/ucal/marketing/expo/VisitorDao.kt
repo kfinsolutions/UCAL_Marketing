@@ -7,7 +7,7 @@ import androidx.room.*
 interface VisitorDao {
 
     @Query("SELECT * FROM visitor_table")
-    fun getAll(): List<Visitor>
+    suspend fun getAll(): List<Visitor>
 
     @Query("SELECT COUNT(id) FROM visitor_table")
     fun getRowCount(): Int
