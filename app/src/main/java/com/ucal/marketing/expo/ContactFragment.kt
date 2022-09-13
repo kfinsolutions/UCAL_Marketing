@@ -24,14 +24,6 @@ class ContactFragment : Fragment() {
     private lateinit var appDb: AppDatabase
 
 
-    override fun onResume() {
-        super.onResume()
-        //Visitor Spinner
-        val visitorType = resources.getStringArray(R.array.visitor_type)
-        val arrayAdapter = ArrayAdapter(requireContext(), R.layout.visitor_type_item, visitorType)
-        binding.textVisitorTypeField.setAdapter(arrayAdapter)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -56,6 +48,14 @@ class ContactFragment : Fragment() {
 
         // Inflate the layout for this fragment
         return binding.root
+    }
+
+    override fun onResume() {
+        super.onResume()
+        //Visitor Spinner
+        val visitorType = resources.getStringArray(R.array.visitor_type)
+        val arrayAdapter = ArrayAdapter(requireContext(), R.layout.visitor_type_item, visitorType)
+        binding.textVisitorTypeField.setAdapter(arrayAdapter)
     }
 
     private fun resetData() {

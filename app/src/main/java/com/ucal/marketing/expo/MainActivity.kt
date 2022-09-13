@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
+        //Menu Handler
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
             drawerLayout.closeDrawer(GravityCompat.START)
         }

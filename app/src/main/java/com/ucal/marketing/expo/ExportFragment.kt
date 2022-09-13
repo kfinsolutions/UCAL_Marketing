@@ -89,8 +89,8 @@ class ExportFragment : Fragment() {
         private fun exportToCsv() {
                 GlobalScope.launch(Dispatchers.IO){
                 val temp = appDb.visitorDao().getAll()
-                val header = listOf("Id", "Full Name", "Designation", "Company Name", "Visitor Category", "Phone", "Email", "Products Interested", "Rating", "Time and Date")
-                visitors.add(header)
+                val header = listOf("Id", "Full Name", "Designation", "Company Name", "Visitor Category", "Phone", "Email", "Products Interested", "Rating", "Time and Date"+'\n' )
+                visitors.add(header.joinToString())
                 for (Visitor in temp){
                     val tempVisitor = listOf(
                         Visitor.id,
@@ -102,9 +102,9 @@ class ExportFragment : Fragment() {
                         Visitor.email,
                         Visitor.productInterest,
                         Visitor.rating,
-                        Visitor.timeStamp,
+                        Visitor.timeStamp+'\n',
                     )
-                    visitors.add(tempVisitor)
+                    visitors.add(tempVisitor.joinToString())
                 }
             }
             createFile(fileUri)
@@ -124,7 +124,7 @@ class ExportFragment : Fragment() {
             try {
                 val pfd: ParcelFileDescriptor? = context?.contentResolver?.openFileDescriptor(uri,"w")
                 val fileOutputStream = FileOutputStream(pfd!!.fileDescriptor)
-                val textContent: String = visitors.toString()
+                val textContent: String = visitors.joinToString("")
                 fileOutputStream.write(textContent.toByteArray())
                 fileOutputStream.close()
                 pfd.close()
