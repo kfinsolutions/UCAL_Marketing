@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
         val mainWeb = view.findViewById<WebView>(R.id.mainWebView)
         mainWeb.webViewClient = WebViewClient()
         mainWeb.apply {
-            loadUrl("file:///android_asset/index.html")
+            loadUrl("http://jba.wxb.mybluehostin.me/360/")
             settings.javaScriptEnabled = true
         }
         return view

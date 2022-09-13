@@ -35,6 +35,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    kapt {
+        arguments {
+            arg("room.schemaLocation", "$projectDir/schemas")
+        }
+    }
 }
 
 dependencies {
@@ -57,6 +63,6 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
     implementation 'com.google.android.material:material:1.6.1'
 
-    implementation "com.github.doyaaaaaken:kotlin-csv-jvm:1.6.0"
+    implementation 'org.apache.commons:commons-csv:1.8'
 
 }

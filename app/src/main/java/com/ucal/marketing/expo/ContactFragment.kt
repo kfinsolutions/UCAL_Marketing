@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.RadioGroup
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.ucal.marketing.expo.databinding.FragmentContactBinding
 import kotlinx.coroutines.DelicateCoroutinesApi
@@ -21,7 +20,7 @@ import java.util.*
 class ContactFragment : Fragment() {
 
     private lateinit var binding: FragmentContactBinding
-    var ratingGroup: RadioGroup? = null
+    private var ratingGroup: RadioGroup? = null
     private lateinit var appDb: AppDatabase
 
 
@@ -112,7 +111,7 @@ class ContactFragment : Fragment() {
         val productOther = binding.productOther
         val productOtherSpecify = binding.textProductOtherSpecifyInputField.text.toString()
         if (productOther.isChecked){addElement(products, productOtherSpecify)}
-        val separator = ","
+        val separator = ";"
         val productsString = products.joinToString(separator)
 
         //Rating
@@ -170,7 +169,7 @@ class ContactFragment : Fragment() {
             Toast.makeText(context, "Email can not be Blank",Toast.LENGTH_SHORT).show()
         }
         else if(productsString.isEmpty()){
-            Toast.makeText(context, "Products has to checked",Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Products has to be checked",Toast.LENGTH_SHORT).show()
         }
         else if(rating.toString().isEmpty()){
             Toast.makeText(context, "Rating can not be Blank",Toast.LENGTH_SHORT).show()
