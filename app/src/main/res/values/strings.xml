@@ -46,6 +46,7 @@
     <string name="total_no_of_entries">Total number of Entries</string>
     <string name="entries_count">0</string>
     <string name="csv_export_successful">CSV Export Successful</string>
+    <string name="tap_twice_to_terminate">Press Back Button again to exit</string>
 
     <string-array name="visitor_type">
         <item>OEM</item>
