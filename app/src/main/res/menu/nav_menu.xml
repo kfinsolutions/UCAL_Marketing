@@ -13,6 +13,10 @@
             android:icon="@drawable/ic_baseline_contacts_24"
             android:title="@string/contact_form" />
         <item
+            android:id="@+id/nav_visitors"
+            android:icon="@drawable/ic_round_people_alt_24"
+            android:title="@string/visitors" />
+        <item
             android:id="@+id/nav_export_csv"
             android:icon="@drawable/ic_baseline_import_export_24"
             android:title="@string/export_to_csv" />

@@ -16,4 +16,5 @@ data class Visitor(
     @ColumnInfo(name = "product_interest") val productInterest: String?,
     @ColumnInfo(name = "rating") val rating: Int?,
     @ColumnInfo(name = "timestamp") val timeStamp: String?,
+
 )

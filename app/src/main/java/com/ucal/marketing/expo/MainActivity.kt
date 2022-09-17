@@ -1,6 +1,5 @@
 package com.ucal.marketing.expo
 
-import android.content.DialogInterface
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -8,11 +7,11 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 
 
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
     private lateinit var toggle : ActionBarDrawerToggle
@@ -42,6 +41,7 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId) {
                 R.id.nav_home -> replaceFragment(HomeFragment(), it.title.toString())
                 R.id.nav_contact -> replaceFragment(ContactFragment(), it.title.toString())
+                R.id.nav_visitors -> replaceFragment(VisitorsFragment(), it.title.toString())
                 R.id.nav_export_csv -> replaceFragment(ExportFragment(), it.title.toString())
             }
 
@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         //Menu Handler
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
@@ -90,6 +91,5 @@ class MainActivity : AppCompatActivity() {
         setTitle(title)
 
     }
-
 
 }

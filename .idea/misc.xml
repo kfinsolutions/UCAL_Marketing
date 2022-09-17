@@ -11,9 +11,11 @@
         <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout/fragment_contact.xml" value="0.25" />
         <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout/fragment_export.xml" value="0.1573844884488449" />
         <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout/fragment_home.xml" value="0.1573844884488449" />
+        <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout/fragment_visitors.xml" value="0.12291666666666666" />
+        <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout/list_item.xml" value="0.25" />
         <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout/nav_header.xml" value="0.1" />
         <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/layout/visitor_type_item.xml" value="0.2967079948696024" />
-        <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/menu/nav_menu.xml" value="0.22" />
+        <entry key="..\:/mobile_apps/UCAL_Marketing/app/src/main/res/menu/nav_menu.xml" value="0.54375" />
       </map>
     </option>
   </component>

@@ -13,20 +13,15 @@ import androidx.appcompat.app.AppCompatActivity
 
 class HomeFragment : Fragment() {
 
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        (requireActivity() as AppCompatActivity).supportActionBar?.hide()
-    }
-
-    override fun onDestroy() {
+    override fun onStop() {
         (requireActivity() as AppCompatActivity).supportActionBar?.show()
-        super.onDestroy()
+        super.onStop()
     }
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
+        (requireActivity() as AppCompatActivity).supportActionBar?.hide()
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         val mainWeb = view.findViewById<WebView>(R.id.mainWebView)
         mainWeb.webViewClient = WebViewClient()

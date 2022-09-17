@@ -1,5 +1,6 @@
 package com.ucal.marketing.expo
 
+import android.app.Activity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,6 +14,7 @@ import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import net.yslibrary.android.keyboardvisibilityevent.util.UIUtil
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -36,6 +38,7 @@ class ContactFragment : Fragment() {
 
         //Save the form data
         binding.visitorFormSubmitButton.setOnClickListener{
+            UIUtil.hideKeyboard(context as Activity)
             writeData()
         }
 
